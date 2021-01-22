@@ -1,0 +1,35 @@
+.mobile-hidden {
+	display: block;	
+	@include for-phone-only {
+		display: none;
+	}
+}
+
+.mobile-only {
+	display: none;
+	@include for-phone-only {
+		display: block;
+	}
+}
+
+.invisible {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.noscroll {
+	position:fixed;
+}
+
+.center {
+	text-align: center;
+}
+
+.margin-sides {
+	margin-left: 40px;
+	margin-right: 40px;
+	@include for-phone-only {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}

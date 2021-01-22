@@ -1,0 +1,36 @@
+
+.modal-overlay {
+	position: absolute;
+	height: 200vh;
+	width: 100vw;
+	top: -200px;
+	background-color: #9c9c9c;
+	z-index: 1;
+	opacity: .8;
+}
+
+.modal-window {
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	transform: translateX(-50%);
+	background-color: $white;
+	padding: 20px;
+	z-index: 2;
+	border: 1px solid $black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-grow: 1;
+	&__text {
+		text-align: center;
+	}
+	
+	@include for-phone-only {
+		width: 80%;
+		height: 200px;
+		font-size: 1.6rem;
+	}
+}

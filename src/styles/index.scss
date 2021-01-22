@@ -1,0 +1,15 @@
+// base
+@import './base/reset.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+@import './base/type.scss';
+@import './base/keyframes.scss';
+@import './utils.scss';
+@import './layout.scss';
+@import './ui.scss';
+//pages
+@import './pages/home.scss';
+@import './pages/auth.scss';
+@import './pages/notAvailable.scss';
+@import './pages/terms.scss';
+

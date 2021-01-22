@@ -1,0 +1,86 @@
+.layout {
+	position: relative;
+}
+
+.rotate {
+	display: none;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 50%);
+}
+
+@media (max-width: 896px) and (min-aspect-ratio: 13/9) {
+// @media (min-width: 400px) and (max-width: 900px) and (min-height: 300px) and (max-height: 414px) and (orientation: landscape) {
+	.layout {
+		display: none;
+	}
+	.rotate {
+		display: block;
+	}
+}
+
+// IMAGE WRAPPER
+.image-wrapper {
+	margin: auto;
+	width: 100%;
+	// margin-top: 20px;
+	position: relative;
+	&__image {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+}
+
+.sixteen-nine {
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 56.25%;
+	}
+}
+
+.four-three {
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 75%;
+	}
+}
+
+.square {
+	&::before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+}
+
+.contain {
+	background-size: contain !important;
+}
+
+.cover {
+	background-size: cover !important;
+}
+
+.video {
+	height: 100%;
+	width: 100%;
+}
+
+.video-cover {
+	object-fit: cover;
+}
+
+.image-banner-margin {
+	margin: 0px 5px;
+}
+
